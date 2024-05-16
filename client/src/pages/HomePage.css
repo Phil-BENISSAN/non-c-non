@@ -1,0 +1,43 @@
+.home_header {
+  background-image: url(../assets/images/cercle_legumes3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.home_title {
+  font-family: var(--secondary-font);
+}
+
+.home_filter_section {
+  margin: auto;
+}
+
+.home_filter_article {
+  background-image: url(../assets/images/courgettes-bois.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 60%;
+  height: 10rem;
+  display: block;
+  margin: auto;
+}
+
+.home_filter_header {
+    background-color: rgba(22, 64, 44, 0.5);
+    width: 60%;
+    text-align: center;
+  }
+
+.home_filter_title {
+  font-family: var(--secondary-font);
+  /* background-color: rgba(22, 64, 44, 0.5); */
+  width: 100%;
+  padding: 1em;
+  margin: 1em;
+  text-align: center;
+  border: 1px solid black;
+}
