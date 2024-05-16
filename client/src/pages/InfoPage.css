@@ -1,0 +1,49 @@
+.infopage_body {
+    background-color: var(--primary-color);
+
+}
+.infopage_title {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 2rem auto;
+}
+.infopage_subtitle {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    margin: 1rem;
+}
+.infopage_item {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    margin: 1rem 1.5rem;
+}
+.infopage_paragraphe {
+    font-family: var(--primary-font);
+    line-height: 1.5;
+    margin: 0 2rem;
+}
+
+.infopage_intro {
+    font-family: var(--primary-font);
+}
+.infopage_intro1_image {
+    width: 15rem;
+    display: block;
+    margin: 1rem auto;
+}
+.infopage_intro2_image {
+    width: 20rem;
+    display: block;
+    margin: 1rem auto;
+}
+.infopage_image {
+    width: 20rem;
+    display: block;
+    margin: 1rem auto;
+}
+.infopage_dernier_paragraphe {
+    font-family: var(--primary-font);
+    line-height: 1.5;
+    margin: 0 2rem 2rem;
+}
