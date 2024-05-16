@@ -41,6 +41,8 @@
   text-shadow: -5px 5px 10px rgba(33, 22, 13 .5);
   text-align: center;
   padding-top: 43vh;
+  text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.8), 
 }
 
 .home_header > p {
@@ -54,7 +56,8 @@
   text-align: right;
   margin-top: -1.4rem;
   text-align: center;
-  color: var(--secondary-color)
+  color: var(--secondary-color);
+  text-shadow: 0 10 10px rgba(255, 255, 255, 1);
 }
 
 .home_section_intro {
