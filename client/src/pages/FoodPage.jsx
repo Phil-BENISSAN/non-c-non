@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useLoaderData, Link } from "react-router-dom";
 
 import Foods from "../components/Foods";
+import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
 
 function FoodPage() {
     const foodList = useLoaderData;
@@ -28,6 +30,7 @@ function FoodPage() {
       
         return (
           <>
+          <NavBar />
             <h1>My foods</h1>
             <form className="food_form">
               <label htmlFor="food_select">
@@ -56,6 +59,7 @@ function FoodPage() {
                   </li>
                 ))}
             </ul>
+            <Footer />
           </>
         );
       }

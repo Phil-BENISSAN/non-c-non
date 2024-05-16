@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Introduction() {
   return (
     <section className="home_section_intro">
@@ -8,9 +10,11 @@ function Introduction() {
       Savez-vous planter les choux ? 
       <br></br>
       <br></br>
-        Retrouvez toutes les informations nécessaires pour créer votre propre potager.
+        Découvrez des astuces pour créer votre propre potager
       </p>
+      <img src="../src/assets/images/carots.png" alt="carottes" className="home_img_carots"/>
       {/* </article> */}
+      <Link to="/informations"><img src="../src/assets/images/gants.png" alt="gants" className="home_intro_img"></img></Link>
     </section>
   );
 }

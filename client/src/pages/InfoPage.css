@@ -47,3 +47,18 @@
     line-height: 1.5;
     margin: 0 2rem 2rem;
 }
+
+@keyframes translation {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+
+.infopage_title, .infopage_subtitle {
+ animation-name: translation;
+  animation-duration: 1.5s;
+  animation-fill-mode: ease-out forwards;
+}

@@ -1,7 +1,12 @@
+import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
 import "./InfoPage.css";
+import "../components/NavBar.css"
 
 function InfoPage() {
   return (
+    <>
+    <NavBar />
     <main className="infopage_body">
       <h1 className="infopage_title">Comment créer un potager ?</h1>
       <header className="infopage_intro">
@@ -326,6 +331,8 @@ function InfoPage() {
         cultivée et des pratiques culturales mises en place.
       </p>
     </main>
+    <Footer />
+    </>
   );
 }
 
