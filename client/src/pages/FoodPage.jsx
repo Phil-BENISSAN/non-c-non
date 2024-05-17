@@ -1,5 +1,5 @@
-import {  useState, useEffect } from "react";
-import { useLoaderData, Link, useParams } from "react-router-dom";
+import {  useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import Foods from "../components/Foods";
 import Footer from "../components/Footer";
@@ -11,11 +11,15 @@ function FoodPage() {
     // const foodList = useLoaderData;
     const [foods, setFoods] = useState([]);
       
-        useEffect(() => {
-          fetch("http://localhost:3310/api/foods")
-            .then((response) => response.json())
-            .then((data) => setFoods(data))
-            .catch((err) => console.error(err));
+        // useEffect(() => {
+        //   fetch("http://localhost:3310/api/foods")
+        //     .then((response) => response.json())
+        //     .then((data) => setFoods(data))
+        //     .catch((err) => console.error(err));
+        // }, []);
+
+        useEffect(()=> {
+          setFoods(foodList);
         }, []);
       
         const [selectedFood, setSelectedFood] = useState("");

@@ -25,6 +25,19 @@
   height: 100vh;
 }
 
+.home_arrosoir {
+  width: 13rem;
+  padding-top: 15rem;
+  opacity: .9;
+  animation-name: fadeing;
+  animation-duration: 5s;
+  display: block;
+  margin: auto;
+  position: inherit;
+  margin-bottom: -3rem;
+}
+
+
 .home_title {
   font-family: var(--secondary-font);
   font-size: 4.8rem;
@@ -34,13 +47,12 @@
   animation-name: fadeing;
   animation-duration: 5s;
   /* animation: ease-in-out forwards; */
-  padding-top: 18rem;
+  /* padding-top: 10rem; */
   color: transparent;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: var(--tertiary-color);
   text-shadow: -5px 5px 10px rgba(33, 22, 13 .5);
   text-align: center;
-  padding-top: 43vh;
   text-shadow: 
     0 0 10px rgba(255, 255, 255, 0.8), 
 }
@@ -118,6 +130,33 @@
   margin-top: 25rem;
 }
 
+/* .home_rounded_text, .home_rounded_text > span {
+  font-family: var(--primary-font);
+  height: 200px;
+  position: absolute;
+  width: 20px;
+  left: 0;
+  top: 0;
+  transform-origin: bottom center;
+}
+/* 
+.char1 {
+  transform: rotate(6deg);
+}
+
+.char2 {
+  transform: rotate(12deg);
+}
+
+.char3 {
+  transform: rotate(18deg);
+}
+
+.char4 {
+  transform: rotate(24deg);
+} */ 
+
+
 .home_intro_img {
   width: 12rem;
   height: 12rem;
@@ -174,6 +213,19 @@
   margin: auto;
   border-radius: 50px 0px;
   box-shadow: 14px 8px 24px 0px rgba(14, 14, 20, 0.8);
+}
+
+.home_filter_article4 {
+  background-image: url(../assets/images/legumes-mix.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 20rem;
+  display: block;
+  margin: auto;
+  border-radius: 0px 50px;
+  box-shadow: 8px 14px 24px 0px rgba(14, 14, 20, 0.8);
 }
 
 .home_filter_header {
