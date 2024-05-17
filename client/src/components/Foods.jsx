@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 
 import DifficultyWateringCan from "./DifficultyWateringCan";
 
@@ -39,23 +38,5 @@ function Foods({ food }) {
     </article>
   );
 }
-
-Foods.propTypes = {
-  food: PropTypes.shape({
-    type: PropTypes.string.isRequired,
-    nom: PropTypes.string.isRequired,
-    photo_legume: PropTypes.string.isRequired,
-    Exposition: PropTypes.string.isRequired,
-    Rusticité: PropTypes.string.isRequired,
-    info_pratique: PropTypes.string.isRequired,
-    difficulté: PropTypes.string.isRequired,
-    Profondeur_semis: PropTypes.string.isRequired,
-    Espacement: PropTypes.string.isRequired,
-    Ecart_rangs: PropTypes.string.isRequired,
-    temps_levé: PropTypes.string.isRequired,
-    température_levée: PropTypes.string.isRequired,
-    semis_récolte: PropTypes.string.isRequired,
-  }),
-};
 
 export default Foods;

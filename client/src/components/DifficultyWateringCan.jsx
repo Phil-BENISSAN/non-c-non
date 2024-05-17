@@ -1,10 +1,10 @@
-import PropTypes from "prop-types";
+
 
 function DifficultyWateringCan({difficulté}) {
 
         const WateringCan = [];
-        const FullWateringCan = "";
-        const EmptyWateringCan = "";
+        const FullWateringCan = "🌝";
+        const EmptyWateringCan = "🌚";
     
         for (let i = 0; i < 3; i++) {
             if (i < difficulté) {
@@ -16,9 +16,5 @@ function DifficultyWateringCan({difficulté}) {
     
         return <div>{WateringCan}</div>;
     }
-    
-    DifficultyWateringCan.propTypes = {
-          difficulté: PropTypes.number.isRequired,
-    };
 
 export default DifficultyWateringCan;
