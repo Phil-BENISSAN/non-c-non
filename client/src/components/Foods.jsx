@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
 
+import DifficultyWateringCan from "./DifficultyWateringCan";
+
 import "./Foods.css";
 
 function Foods({ food }) {
@@ -27,7 +29,7 @@ function Foods({ food }) {
       <p>Exposition : {Exposition}. </p>
       <p>Rusticité : {Rusticité}. </p>
       <p>À savoir : {info_pratique}. </p>
-      <p>Difficulté : {difficulté} </p>
+      <p>Difficulté : <DifficultyWateringCan difficulté={difficulté}/> </p>
       <p>Profondeur des semis : {Profondeur_semis} cm.</p>
       <p>Espacement : {Espacement} cm.</p>
       <p>Écart entre les rangs : {Ecart_rangs} cm.</p>
