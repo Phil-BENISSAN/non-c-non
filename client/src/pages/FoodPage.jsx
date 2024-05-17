@@ -37,10 +37,11 @@ function FoodPage() {
         return (
           <>
           <NavBar />
-            <h1>My foods</h1>
+          <section className="toutes-catégories">
+          <h1 className="foods_title">Toutes catégories</h1>
             <form className="food_form">
               <label htmlFor="food_select">
-                Filter by {" "}
+                Filtrer par {" "}
                 <select
                   id="food_select"
                   onChange={handleFoodChange}
@@ -63,6 +64,7 @@ function FoodPage() {
                   </li>
                 ))}
             </ul>
+            </section>
             <Footer />
           </>
         );

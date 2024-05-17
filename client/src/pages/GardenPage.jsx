@@ -1,6 +1,7 @@
+import { useParams } from "react-router-dom";
 
 function GardenPage() {
-  const foodList = useParams;
+  const foodList = useLoaderData;
   const [foods, setFoods] = useState([]);
 
     

@@ -14,7 +14,7 @@ a {
     color: var(--primary-color)
 }
 
-ul {
+nav > ul {
     list-style: none;
     display: flex;
     gap: .8rem;

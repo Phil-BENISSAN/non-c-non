@@ -1,41 +1,23 @@
-
 import DifficultyWateringCan from "./DifficultyWateringCan";
 
 import "./Foods.css";
 
 function Foods({ food }) {
-  const {
-    type,
-    nom,
-    photo_legume,
-    Exposition,
-    Rusticité,
-    info_pratique,
-    difficulté,
-    Profondeur_semis,
-    Espacement,
-    Ecart_rangs,
-    temps_levé,
-    température_levée,
-    semis_récolte,
-  } = food;
+  const { type, nom, photo_legume, info_pratique, difficulté } = food;
 
   return (
-    <article className="food_card">
-      <h2 className="food_name"> {nom} </h2>
-      <h3 className="food_type"> {type} </h3>
-      <img src={photo_legume} alt={nom} className="food_photo" />
-      <p>Exposition : {Exposition}. </p>
-      <p>Rusticité : {Rusticité}. </p>
-      <p>À savoir : {info_pratique}. </p>
-      <p>Difficulté : <DifficultyWateringCan difficulté={difficulté}/> </p>
-      <p>Profondeur des semis : {Profondeur_semis} cm.</p>
-      <p>Espacement : {Espacement} cm.</p>
-      <p>Écart entre les rangs : {Ecart_rangs} cm.</p>
-      <p>Temps de levée : {temps_levé} jours.</p>
-      <p>Température de levée : {température_levée}°c. </p>
-      <p>Du semis à la récolte : {semis_récolte} jours.</p>
-    </article>
+    <section className="category">
+      <article className="foods_card">
+        <h2 className="foods_name"> {nom} </h2>
+        <h3 className="foods_type"> {type} </h3>
+        <img src={photo_legume} alt={nom} className="food_photo" />
+        <p className="foods_para">À savoir : {info_pratique}. </p>
+        <p className="foods_para">
+          {" "}
+          <DifficultyWateringCan difficulté={difficulté} />{" "}
+        </p>
+      </article>
+    </section>
   );
 }
 
