@@ -53,7 +53,7 @@
     margin: 0 2rem 2rem;
 }
 
-@keyframes translation {
+@keyframes translationTitles {
     0% {
         transform: translateX(-100%);
     }
@@ -62,8 +62,27 @@
     }
   }
 
-.infopage_title, .infopage_subtitle {
- animation-name: translation;
+.infopage_title, .infopage_subtitle, .infopage_item {
+ animation-name: translationTitles;
   animation-duration: 1.5s;
   animation-fill-mode: ease-out forwards;
 }
+
+@keyframes translationItems {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+
+  .infopage_paragraphe, .infopage_image, .infopage_intro1_image, .infopage_intro2_image {
+    animation-name: translationItems;
+     animation-duration: 1.5s;
+     animation-fill-mode: ease-out forwards;
+   }
+   
+   .infopage_image, .infopage_intro1_image, .infopage_intro2_image {
+    border-radius: 20px 0;
+   }
