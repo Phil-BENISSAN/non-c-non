@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage.jsx';
 import FoodPage from './pages/FoodPage.jsx';
 import GardenPage from './pages/GardenPage.jsx';
 import InfoPage from './pages/InfoPage.jsx';
+import Food from './components/Food.jsx';
 import LegumesPage from './pages/LegumesPage.jsx';
 import FruitsPage from './pages/FruitsPage.jsx';
 import AromatesPage from './pages/AromatesPage.jsx';
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/aliments",
         element: <FoodPage />,
+      },
+      {
+        path: "/aliments/:food",
+        element: <Food />,
       },
       {
         path: "/legumes",

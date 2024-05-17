@@ -1,6 +1,6 @@
 
 function GardenPage() {
-  const foodList = useLoaderData;
+  const foodList = useParams;
   const [foods, setFoods] = useState([]);
 
     
