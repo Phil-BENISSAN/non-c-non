@@ -110,6 +110,14 @@
   z-index: 1;
 }
 
+.home_intro_arrow {
+  position: absolute;
+  z-index: 4;
+  width: 7rem;
+  right: 6rem;
+  margin-top: 25rem;
+}
+
 .home_intro_img {
   width: 12rem;
   height: 12rem;
@@ -123,7 +131,7 @@
 
 .home_filter_section {
   margin: 5rem auto;
-  margin-top: 50rem;
+  margin-top: 47rem;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;

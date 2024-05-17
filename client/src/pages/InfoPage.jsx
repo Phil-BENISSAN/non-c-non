@@ -8,6 +8,7 @@ function InfoPage() {
     <>
     <NavBar />
     <main className="infopage_body">
+      <img src="src/assets/images/brouette.webp" alt="brouette avec légumes"></img>
       <h1 className="infopage_title">Comment créer un potager ?</h1>
       <header className="infopage_intro">
         <article className="infopage_intro1">
