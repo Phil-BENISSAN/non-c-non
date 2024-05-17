@@ -1,5 +1,5 @@
 import {  useState, useEffect } from "react";
-import { useLoaderData, Link } from "react-router-dom";
+import { useLoaderData, Link, useParams } from "react-router-dom";
 
 import Foods from "../components/Foods";
 import Footer from "../components/Footer";
@@ -8,6 +8,7 @@ import NavBar from "../components/NavBar";
 function FoodPage() {
     const foodList = useLoaderData;
     const [foods, setFoods] = useState([]);
+    const { type } = useParams();
       
         useEffect(() => {
           fetch("http://localhost:3310/api/foods")
