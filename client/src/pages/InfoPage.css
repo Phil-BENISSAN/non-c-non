@@ -1,7 +1,10 @@
 .infopage_body {
     background-color: var(--primary-color);
-
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
+
 .infopage_title {
     font-family: var(--secondary-font);
     color: var(--secondary-color);
@@ -22,6 +25,8 @@
     font-family: var(--primary-font);
     line-height: 1.5;
     margin: 0 2rem;
+    color: var(--tertiary-color);
+    font-weight: 500;
 }
 
 .infopage_intro {
@@ -46,4 +51,19 @@
     font-family: var(--primary-font);
     line-height: 1.5;
     margin: 0 2rem 2rem;
+}
+
+@keyframes translation {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+
+.infopage_title, .infopage_subtitle {
+ animation-name: translation;
+  animation-duration: 1.5s;
+  animation-fill-mode: ease-out forwards;
 }

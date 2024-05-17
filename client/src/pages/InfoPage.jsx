@@ -1,8 +1,14 @@
+import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
 import "./InfoPage.css";
+import "../components/NavBar.css"
 
 function InfoPage() {
   return (
+    <>
+    <NavBar />
     <main className="infopage_body">
+      <img src="src/assets/images/brouette.webp" alt="brouette avec légumes"></img>
       <h1 className="infopage_title">Comment créer un potager ?</h1>
       <header className="infopage_intro">
         <article className="infopage_intro1">
@@ -326,6 +332,8 @@ function InfoPage() {
         cultivée et des pratiques culturales mises en place.
       </p>
     </main>
+    <Footer />
+    </>
   );
 }
 
