@@ -37,7 +37,6 @@ function FoodPage() {
         return (
           <>
           <NavBar />
-            <h1>My foods</h1>
             <form className="food_form">
               <label htmlFor="food_select">
                 Filter by {" "}

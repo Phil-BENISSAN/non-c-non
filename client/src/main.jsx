@@ -31,16 +31,8 @@ const router = createBrowserRouter([
         element: <Food />,
       },
       {
-        path: "/legumes",
+        path: "/:type",
         element: <LegumesPage />,
-      },
-      {
-        path: "/fruits",
-        element: <FruitsPage />,
-      },
-      {
-        path: "/aromates",
-        element: <AromatesPage />,
       },
       {
         path: "/potager",
