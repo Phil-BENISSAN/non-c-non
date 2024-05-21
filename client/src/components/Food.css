@@ -1,6 +1,6 @@
 .food_title {
     font-family: var(--secondary-font);
-    margin: 2rem auto;
+    margin: 7rem auto 3rem;
     text-align: center;
     color: var(--tertiary-color);
 }
@@ -24,6 +24,7 @@
 }
 .food_photo {
     width: 15rem;
+    height: 10rem;
     display: block;
     margin: 1rem auto;
     border: 0.2rem solid var(--secondary-color);

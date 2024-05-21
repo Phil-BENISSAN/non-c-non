@@ -12,7 +12,7 @@ function Foods({ food }) {
         <h3 className="foods_type"> {type} </h3>
         <img src={photo_legume} alt={nom} className="food_photo" />
         <p className="foods_para">À savoir : {info_pratique}. </p>
-        <p className="foods_para">
+        <p className="foods_para_smiley">
           {" "}
           <DifficultyWateringCan difficulté={difficulté} />{" "}
         </p>

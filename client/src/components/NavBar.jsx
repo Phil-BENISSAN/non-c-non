@@ -4,7 +4,7 @@ function NavBar() {
 
     return(
         <nav>
-            <img src="../src/assets/images/logo.ico" className="nav_logo"/>
+            <Link to="/"><img src="../src/assets/images/logo.ico" className="nav_logo"/></Link>
             <ul>
                 <li><Link to="/">Accueil</Link></li>
                 <li><Link to="/informations">Astuces</Link></li>

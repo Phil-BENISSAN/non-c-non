@@ -5,6 +5,8 @@ import Footer from "../components/Footer";
 import Foods from "../components/Foods";
 import NavBar from "../components/NavBar";
 
+import "./LesgumesPage.css";
+
 function Legumes() {
     // const [foods, setFoods] = useState([]);
       
@@ -24,6 +26,8 @@ console.log(legumes)
     return (
       <>
       <NavBar />
+     
+      <h1 className="categories_title">Les {type}</h1>
       <section className="categories_section">
         <ul className="food_list" >
           {legumes &&

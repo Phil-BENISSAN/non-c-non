@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 
 import foodList from "../assets/df_potager.json";
+import './FoodPage.css'
 
 function FoodPage() {
     // const foodList = useLoaderData;
@@ -38,9 +39,9 @@ function FoodPage() {
           <>
           <NavBar />
           <section className="toutes-catégories">
-          <h1 className="foods_title">Toutes catégories</h1>
+          <h1 className="foods_title">Toutes les catégories</h1>
             <form className="food_form">
-              <label htmlFor="food_select">
+              <label htmlFor="food_select" className="food_select">
                 Filtrer par {" "}
                 <select
                   id="food_select"
